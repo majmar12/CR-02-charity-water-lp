@@ -1,47 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water - Change the Flow</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {    body {
+      font-family: Arial, sans-serif;
+      /* Set the background image to the new file in the img folder */
+      background: url('img/Copy of Charity Water Landing Page Template (1).png') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #1a1a1a;
+    }
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.75);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .branding img {
+      height: 24px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .left, .right {
+      flex: 1 1 45%;
+    }
+
+    .left h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .left p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    .right h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .signup {
+      display: flex;
+      margin-top: 2rem;
+    }
+
+    .signup input[type="email"] {
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      flex: 1;
+      font-size: 1rem;
+    }
+
+    .signup button {
+      padding: 0.75rem 1.25rem;
+      background-color: #f9c000;
+      color: #000;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .signup button:hover {
+      background-color: #e5aa00;
+    }
+
+    @media (max-width: 768px) {
+      .left, .right {
+        flex: 1 1 100%;
+      }
+      .left h1, .right h2 {
+        text-align: center;
+      }
+      .signup {
+        flex-direction: column;
+      }
+      .signup input, .signup button {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+      }
+      .signup button {
+        margin-bottom: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+  <div class="overlay">
+    <div class="container">
+      <div class="branding">
+        <img src="placeholder-logo.png" alt="Charity Water Logo" />
+        charity: water
+      </div>
+      <div class="content">
+        <div class="left">
+          <h1>Change the Flow</h1>
+          <p>
+            Charity: Water empowers communities, drives long-term solutions,
+            and ensures full transparency in the face of the global water crisis.
+          </p>
+          <div class="signup">
+            <input type="email" placeholder="Email" />
+            <button>Change the Tide!</button>
+          </div>
         </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+        <div class="right">
+          <h2>1 in 10 People<br>Do Not Have<br>Access to<br>Clean Water</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
