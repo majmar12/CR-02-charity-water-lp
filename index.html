@@ -12,22 +12,19 @@
     }
 
     body {
-      /* Use Proxima Nova if available, otherwise use Avenir, then a generic sans-serif font */
       font-family: 'Proxima Nova', Avenir, sans-serif;
-      /* Set the background image for the whole page */
       background: url('img/Copy of Charity Water Landing Page Template (1).png') no-repeat center center/cover;
       min-height: 100vh;
       color: #1a1a1a;
     }
 
-    /* The overlay class centers the content vertically and adds padding */
+
     .overlay {
-      min-height: 100vh; /* Make sure overlay covers the whole viewport */
-      display: flex; /* Use flexbox to center content */
-      flex-direction: column; /* Stack children vertically */
-      justify-content: center; /* Center content vertically */
-      padding: 2rem; /* Add space around the content */
-    }
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 32px;
     }
 
     .container {
@@ -38,11 +35,11 @@
     .branding {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 1.5rem;
+      gap: 8px;
+      font-size: 24px;
       font-weight: bold;
       color: #333;
-      margin-bottom: 2rem;
+      margin-bottom: 32px;
     }
 
     .branding img {
@@ -53,7 +50,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 2rem;
+      gap: 32px;
     }
 
     .left, .right {
@@ -61,38 +58,38 @@
     }
 
     .left h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 40px;
+      margin-bottom: 16px;
     }
 
     .left p {
-      font-size: 1rem;
+      font-size: 16px;
       line-height: 1.5;
-      margin-bottom: 2rem;
+      margin-bottom: 32px;
     }
 
     .right h2 {
-      font-size: 2rem;
+      font-size: 32px;
       font-weight: bold;
       color: #111;
     }
 
     .signup {
       display: flex;
-      margin-top: 2rem;
+      margin-top: 32px;
     }
 
     .signup input[type="email"] {
-      padding: 0.75rem 1rem;
+      padding: 12px 16px;
       border: none;
       border-radius: 5px 0 0 5px;
       flex: 1;
-      font-size: 1rem;
+      font-size: 16px;
       width: 300px;
     }
 
     .signup button {
-      padding: 0.75rem 1.25rem;
+      padding: 12px 20px;
       background-color: #f9c000;
       color: #000;
       border: none;
@@ -119,7 +116,7 @@
       .signup input, .signup button {
         width: 100%;
         border-radius: 5px;
-        margin-bottom: 0.5rem;
+        margin-bottom: 8px;
       }
       .signup button {
         margin-bottom: 0;
@@ -131,13 +128,13 @@
   <div class="overlay">
     <div class="container">
       <div class="branding">
-        <!-- Logo image for Charity: Water -->
+        <!-- Logo for Charity: Water -->
         <img src="img/cw_logo-2.png" alt="Charity Water Logo" />
       </div>
       <div class="content">
         <div class="left">
-            <h1 style="font-size: 5rem;">Change the Flow</h1>
-            <p style="font-size: 1.5rem; max-width: 450px; margin-left: 2rem;">
+            <h1 style="font-size: 80px;">Change the Flow</h1>
+            <p style="font-size: 24px; max-width: 450px; margin-left: 32px;">
               Charity: Water empowers communities, drives long-term solutions,
               and ensures full transparency in the face of the global water crisis.
             </p>
@@ -146,14 +143,12 @@
             <button>Change the Tide!</button>
           </div>
         </div>
-        <div class="right" style="text-align: rig100; margin-left: 2rem;">
-            <h2 style="font-family: 'Proxima Nova', Avenir, sans-serif; font-weight: bold; font-size: 4rem; margin-top: -2rem; line-height: 1; text-align: right;">
-              1 in 10 People<br>
-              Do Not Have<br>
-              Access to<br>
-              Clean Water
-            </h2>
-            </h2>
+        <div class="right" style="margin-left: 32px;">
+          <h2 style="font-family: 'Proxima Nova', Avenir, sans-serif; font-weight: bold; font-size: 64px; margin-top: -32px; line-height: 1; text-align: right;">
+            1 in 10 People<br>
+            Do Not Have<br>
+            Access to<br>
+            Clean Water
           </h2>
         </div>
         </div>
