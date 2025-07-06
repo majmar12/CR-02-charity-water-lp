@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charity: Water - Change the Flow</title>
+  <title>Charity: Water, Change the Flow</title>
   <style>
     * {
       box-sizing: border-box;
@@ -11,22 +11,23 @@
       padding: 0;
     }
 
-    body {    body {
-      font-family: Arial, sans-serif;
-      /* Set the background image to the new file in the img folder */
+    body {
+      /* Use Proxima Nova if available, otherwise use Avenir, then a generic sans-serif font */
+      font-family: 'Proxima Nova', Avenir, sans-serif;
+      /* Set the background image for the whole page */
       background: url('img/Copy of Charity Water Landing Page Template (1).png') no-repeat center center/cover;
       min-height: 100vh;
       color: #1a1a1a;
     }
-    }
 
+    /* The overlay class centers the content vertically and adds padding */
     .overlay {
-      background-color: rgba(255, 255, 255, 0.75);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2rem;
+      min-height: 100vh; /* Make sure overlay covers the whole viewport */
+      display: flex; /* Use flexbox to center content */
+      flex-direction: column; /* Stack children vertically */
+      justify-content: center; /* Center content vertically */
+      padding: 2rem; /* Add space around the content */
+    }
     }
 
     .container {
@@ -87,6 +88,7 @@
       border-radius: 5px 0 0 5px;
       flex: 1;
       font-size: 1rem;
+      width: 300px;
     }
 
     .signup button {
@@ -129,23 +131,31 @@
   <div class="overlay">
     <div class="container">
       <div class="branding">
-        <img src="placeholder-logo.png" alt="Charity Water Logo" />
-        charity: water
+        <!-- Logo image for Charity: Water -->
+        <img src="img/cw_logo-2.png" alt="Charity Water Logo" />
       </div>
       <div class="content">
         <div class="left">
-          <h1>Change the Flow</h1>
-          <p>
-            Charity: Water empowers communities, drives long-term solutions,
-            and ensures full transparency in the face of the global water crisis.
-          </p>
+            <h1 style="font-size: 5rem;">Change the Flow</h1>
+            <p style="font-size: 1.5rem; max-width: 450px; margin-left: 2rem;">
+              Charity: Water empowers communities, drives long-term solutions,
+              and ensures full transparency in the face of the global water crisis.
+            </p>
           <div class="signup">
             <input type="email" placeholder="Email" />
             <button>Change the Tide!</button>
           </div>
         </div>
-        <div class="right">
-          <h2>1 in 10 People<br>Do Not Have<br>Access to<br>Clean Water</h2>
+        <div class="right" style="text-align: rig100; margin-left: 2rem;">
+            <h2 style="font-family: 'Proxima Nova', Avenir, sans-serif; font-weight: bold; font-size: 4rem; margin-top: -2rem; line-height: 1; text-align: right;">
+              1 in 10 People<br>
+              Do Not Have<br>
+              Access to<br>
+              Clean Water
+            </h2>
+            </h2>
+          </h2>
+        </div>
         </div>
       </div>
     </div>
